@@ -1,12 +1,11 @@
   const express = require('express');
+  const routes = require('./routes');
 
   // Crear una app de Express
   const app = express();
 
-  // ruta para el home, con .use ejecutara cualquier tipo de petición http
-  app.use('/', (req, res) => {
-    res.send('Hola');
-  });
+  // Archivos de rutas
+  app.use('/', routes());
 
 
   app.listen(3000);
