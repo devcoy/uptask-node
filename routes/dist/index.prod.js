@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),router=express.Router(),projectsController=require("../controllers/projectsController");module.exports=function(){return router.get("/",projectsController.home),router.get("/nuevo-proyecto",projectsController.formProject),router.get("/nosotros",function(r,e){e.render("about-us")}),router};

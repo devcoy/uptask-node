@@ -5,3 +5,9 @@ exports.home = function (req, res) {
     pageName: 'Proyectos'
   });
 };
+
+exports.formProject = function (req, res) {
+  res.render('new-project', {
+    pageName: 'Nuevo Proyecto'
+  });
+};
