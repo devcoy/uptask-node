@@ -1,0 +1,1 @@
+"use strict";var Sequelize=require("sequelize"),sequelize=new Sequelize("uptask_node","root","root",{host:"localhost",dialect:"mysql",port:3306,define:{timestamp:!1},pool:{max:5,min:0,acquire:3e4,idle:1e4}});
