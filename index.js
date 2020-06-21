@@ -1,11 +1,19 @@
-  const express = require('express');
-  const routes = require('./routes');
+const express = require('express');
+const routes = require('./routes');
+const path = require('path'); // Permite manipular el Filesystem
 
-  // Crear una app de Express
-  const app = express();
+// Crear una app de Express
+const app = express();
 
-  // Archivos de rutas
-  app.use('/', routes());
+// Hábilitar pug
+app.set('view engine', 'pug');
+
+// Vistas
+app.set('viewa', path.join(__dirname, './views'));
 
 
-  app.listen(3000);
+// Archivos de rutas
+app.use('/', routes());
+
+
+app.listen(3000);

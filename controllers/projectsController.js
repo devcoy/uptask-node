@@ -1,5 +1,5 @@
 exports.home = (req, res) => {
-  res.send('Hola');
+  res.render('index');
 }
 
 exports.about = (req, res) => {
