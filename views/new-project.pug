@@ -2,6 +2,14 @@ extends layout
 block content 
   .contenido-principal
     h1 #{pageName}
+    if errors
+      each error in errors
+        .alerta.error= error.text
+        
+      
+      
+        
+            
     form.agregar-proyecto(action="/nuevo-proyecto" method="post")
       .campo
         label(for="name") Nombre Proyecto:
