@@ -1,7 +1,5 @@
 exports.home = (req, res) => {
-  res.render('index');
-}
-
-exports.about = (req, res) => {
-  res.send('Nosotros');
-}
+  res.render('index', {
+    pageName : 'Proyectos',
+  });
+} 

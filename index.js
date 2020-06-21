@@ -5,6 +5,9 @@ const path = require('path'); // Permite manipular el Filesystem
 // Crear una app de Express
 const app = express();
 
+// Configurar assets
+app.use(express.static('public'));
+
 // Hábilitar pug
 app.set('view engine', 'pug');
 

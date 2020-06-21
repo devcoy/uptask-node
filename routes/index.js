@@ -9,7 +9,9 @@ const projectsController = require('../controllers/projectsController'); // Impo
 module.exports = function() {
   router.get('/', projectsController.home) ;
 
-  router.get('/nosotros',  projectsController.about);
+  router.get('/nosotros', (req, res) => {
+    res.render('about-us');
+  });
 
   return router;
 }
