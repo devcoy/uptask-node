@@ -1,0 +1,1 @@
+"use strict";exports.home=function(e,o){o.render("index",{pageName:"Proyectos"})};
