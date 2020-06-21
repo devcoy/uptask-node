@@ -10,7 +10,7 @@ module.exports = function() {
   router.get('/', projectsController.home) ;
 
   router.get('/nuevo-proyecto', projectsController.formProject);
-
+  router.post('/nuevo-proyecto', projectsController.createProject)
 
 
 

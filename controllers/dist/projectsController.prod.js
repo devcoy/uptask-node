@@ -1,1 +1,1 @@
-"use strict";exports.home=function(e,o){o.render("index",{pageName:"Proyectos"})},exports.formProject=function(e,o){o.render("new-project",{pageName:"Nuevo Proyecto"})};
+"use strict";exports.home=function(e,o){o.render("index",{pageName:"Proyectos"})},exports.formProject=function(e,o){o.render("new-project",{pageName:"Nuevo Proyecto"})},exports.createProject=function(e,o){console.log(e.body)};

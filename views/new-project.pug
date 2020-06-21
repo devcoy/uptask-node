@@ -2,7 +2,7 @@ extends layout
 block content 
   .contenido-principal
     h1 #{pageName}
-    form.agregar-proyecto
+    form.agregar-proyecto(action="/nuevo-proyecto" method="post")
       .campo
         label(for="name") Nombre Proyecto:
         input(type="text" id="name" name="name" placeholder="Nombre proyecto")
